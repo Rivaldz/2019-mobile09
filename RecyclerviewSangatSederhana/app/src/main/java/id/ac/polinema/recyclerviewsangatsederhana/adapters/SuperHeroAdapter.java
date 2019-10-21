@@ -55,7 +55,7 @@ public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyVi
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            TextView heroName = itemView.findViewById(R.id.textViewHeroName);
+              heroName = itemView.findViewById(R.id.heroName);
         }
     }
 }
