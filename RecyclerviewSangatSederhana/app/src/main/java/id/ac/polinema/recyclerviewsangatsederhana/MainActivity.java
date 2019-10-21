@@ -34,9 +34,8 @@ public class MainActivity extends AppCompatActivity {
         SuperHeroAdapter superHeroAdapter = new SuperHeroAdapter(listSuperHero);
         //set adapter dan layputmanager
         rvSuperHero.setAdapter(superHeroAdapter);
+        //instansiasi
         rvSuperHero.setLayoutManager(new LinearLayoutManager(this));
-
-
 
     }
 }

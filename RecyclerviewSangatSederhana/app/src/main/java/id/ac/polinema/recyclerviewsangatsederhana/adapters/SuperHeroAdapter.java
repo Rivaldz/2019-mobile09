@@ -52,7 +52,6 @@ public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyVi
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView heroName;
-
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
               heroName = itemView.findViewById(R.id.heroName);
