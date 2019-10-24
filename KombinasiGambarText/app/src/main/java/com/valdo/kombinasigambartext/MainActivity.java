@@ -1,6 +1,7 @@
 package com.valdo.kombinasigambartext;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -51,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
         rvWayang.setAdapter(wayangFigureAdapter);
         //instansiasi
         rvWayang.setLayoutManager(new LinearLayoutManager(this));
+
+        // set a GridLayoutManager with default vertical orientation and 2 number of columns
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),2);
+        rvWayang.setLayoutManager(gridLayoutManager); // set LayoutManager to RecyclerView
 
 
     }
