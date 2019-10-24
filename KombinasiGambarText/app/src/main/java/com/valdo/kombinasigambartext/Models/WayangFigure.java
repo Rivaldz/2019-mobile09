@@ -4,6 +4,14 @@ public class WayangFigure {
     public  String wayangName;
     public  int wayangImage;
 
+//    public WayangFigure() {
+//    }
+
+//    public WayangFigure(String wayangName) {
+//        this.wayangName = wayangName;
+//    }
+
+
     public WayangFigure(String wayangName, int wayangImage) {
         this.wayangName = wayangName;
         this.wayangImage = wayangImage;

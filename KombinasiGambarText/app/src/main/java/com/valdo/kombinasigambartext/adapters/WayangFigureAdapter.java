@@ -18,15 +18,22 @@ import java.util.List;
 public class WayangFigureAdapter extends
         RecyclerView.Adapter<WayangFigureAdapter.MyViewHolder> {
 
-   List<WayangFigure> wayangList;
+    private  static  final String TAG = WayangFigureAdapter.class.getSimpleName();
+
+    private Context context;
+    private List<WayangFigure> wayangList;
 
     public WayangFigureAdapter(List<WayangFigure> wayangList){
+        this.context = context;
         this.wayangList = wayangList;
     }
 
     @NonNull
     @Override
     public WayangFigureAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+//        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_wayang,
+//        parent,false);
+//        return new ViewHolder(view);
         Context context = parent.getContext();
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         View wayangFigureView = layoutInflater.inflate(R.layout.item_wayang,parent,false);
@@ -48,7 +55,7 @@ public class WayangFigureAdapter extends
 
     @Override
     public int getItemCount() {
-        return 0;
+        return (wayangList != null) ? wayangList.size() : 0 ;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

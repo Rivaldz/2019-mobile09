@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         listSuperHero.add(hero);
         //membuat object hero baru
         hero = new SuperHero("Hayam Wuruk");
+
         //menambahkan hero ke listSuperHero
         listSuperHero.add(hero);
         //instansiasi adapter
